@@ -1,61 +1,50 @@
-def show_questions():
-    print("Select a question to see the output:")
-    print("1. Add two numbers")
-    print("2. Find remainder when a number is divided by z")
-    print("3. Check the type of a variable")
-    print("4. Compare two numbers")
-    print("5. Find the average of two numbers")
-    print("6. Calculate the square of a number")
+# object: Write a python program to add two numbers
 
-def add_two_numbers():
-    a = 10
-    b = 29
-    print(a + b)
+a= 10
+b = 29
 
-def find_remainder():
-    a = 10
-    z = 3
-    c = a % z
-    print(c)
+print(a+b)
+#output:39
 
-def check_type():
-    a = input("Enter a number: a")
-    t = type(a)
-    print(t)
+#object: Write a python program  to find remainder when a number is divided by z.
 
-def compare_numbers():
-    a = 34
-    b = 80
-    print(a > b)
+a= 10
+z = 3
+c = a%z
+ 
+print(c)
+#output:1
 
-def average_of_two_numbers():
-    a = int(input("Enter a number: a"))
-    b = int(input("Enter a number: b"))
-    print("The average of these two numbers is: ", (a + b) / 2)
+#object: Write a python to check the type of variable assigned using input () function.
 
-def square_of_number():
-    a = int(input("Enter a number: a"))
-    print("The square of the number is: ", a * a)
+a = input("Enter a number: a")
 
-# Main function to display questions and execute the selected option
-def main():
-    show_questions()
-    choice = int(input("Enter the number of the question you want to see: "))
-    
-    if choice == 1:
-        add_two_numbers()
-    elif choice == 2:
-        find_remainder()
-    elif choice == 3:
-        check_type()
-    elif choice == 4:
-        compare_numbers()
-    elif choice == 5:
-        average_of_two_numbers()
-    elif choice == 6:
-        square_of_number()
-    else:
-        print("Invalid choice!")
+t = type(a)
+print(t)
 
-# Run the program
-main()
+#object: Write a python program  use comparison operator to find out whether a given variable a is greater than 'B' OR NOT. take a = 34 and b = 80
+print("  ")
+a = 34
+b = 80
+print(a>b)
+
+
+
+print("  ")
+#Object: Write a python program  to find an average of two numbers entered by the user.
+
+a= int(input("Enter a number: a"))
+b= int(input("Enter a number: b"))
+
+print("The averege of these two number is: ",(a+b)/2)
+
+
+print(" ------------------------------ ")
+
+#Object: Write a python program to calculate the square of a number entere by the user.
+
+a= int(input("Enter a number: a"))
+print("The square of the number is: ",a*a) #yes valid
+# print("The square of the number is: ",a**2) #yes valid
+# print("The square of the number is: ",a^2) #Not valid
+# print("The square of the number is: ",a^a) #Not valid
